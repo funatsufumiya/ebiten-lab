@@ -18,11 +18,11 @@ func (g *Game) Draw(screen *ebiten.Image) {
 }
 
 func (g *Game) Layout(outsideWidth, outsideHeight int) (screenWidth, screenHeight int) {
-	return 320, 240
+	return 200, 50
 }
 
 func main() {
-	ebiten.SetWindowSize(640, 480)
+	ebiten.SetWindowSize(300, 100)
 	ebiten.SetWindowTitle("Hello, World!")
 	if err := ebiten.RunGame(&Game{}); err != nil {
 		log.Fatal(err)
